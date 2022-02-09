@@ -1,7 +1,7 @@
 var altura = 0;
 var largura = 0;
 var vidas = 1;
-var time = 20;
+var time = 15;
 var tempoDificuldade = 1500
 
 var nivel = window.location.search
