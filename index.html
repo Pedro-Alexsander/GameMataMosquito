@@ -19,7 +19,10 @@
             alert("Selecione um nível para iniciar o jogo")
             return false
         }
-        alert(dificuldade)
+
+        // não é convencional fazer dessa manneira, porém é 
+        // a forma que aprendi até agora
+        window.location.href = "app.html?" + dificuldade
         }
 
 

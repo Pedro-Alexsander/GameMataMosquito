@@ -1,7 +1,19 @@
 var altura = 0;
 var largura = 0;
 var vidas = 1;
-var time = 10;
+var time = 20;
+var tempoDificuldade = 1500
+
+var nivel = window.location.search
+nivel = nivel.replace("?", "")
+
+if(nivel ==="normal"){
+    tempoDificuldade = 1600
+}else if(nivel === "dificil"){
+    tempoDificuldade = 1100
+}else if(nivel === "chucknorris"){
+    tempoDificuldade = 850
+}
 
 function ajusteTela() {
   altura = window.innerHeight;
