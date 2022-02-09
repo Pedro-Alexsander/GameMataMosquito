@@ -1,12 +1,24 @@
 var altura = 0;
 var largura = 0;
 var vidas = 1;
+var time = 10;
+
 function ajusteTela() {
   altura = window.innerHeight;
   largura = window.innerWidth;
-  console.log(largura, altura);
+//   console.log(largura, altura);
 }
 ajusteTela();
+
+var cronometro = setInterval(function(){
+    time -=1
+    if(time<0){
+        clearInterval(cronometro)
+        clearInterval(criaMosquito)
+    }else{
+        document.getElementById("cronometro").innerHTML = time
+    }  
+}, 1000)
 
 function posicaoRandomica() {
   //removar o mosquito anterior (caso exista)
