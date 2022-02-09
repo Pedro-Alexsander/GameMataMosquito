@@ -14,7 +14,7 @@ function posicaoRandomica() {
     document.getElementById("mosquito").remove();
     // console.log( 'elemento selecionado foi: v' + vidas)
     if(vidas > 3){
-        alert("Interromper o jogo")
+        window.location.href = 'game_over.html'
     }else{
         document.getElementById("v" + vidas).src = "imagens/coracao_vazio.png";
     }
